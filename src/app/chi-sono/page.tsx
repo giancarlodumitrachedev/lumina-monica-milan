@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getDemoParams } from "@/lib/demo-params";
 import { SmartLink } from "@/components/smart-link";
+import { getDemoParams } from "@/lib/demo-params";
 
 export const metadata = { title: "Chi Sono | Lumina Psicologo" };
 
@@ -37,23 +37,29 @@ export default async function ChiSonoPage({
               {params.name} <span className="text-foreground/50 font-normal">| {params.fieldDisplay}</span>
             </h2>
             <p className="mb-4">
-              La mia passione per la psicologia nasce dal desiderio profondo di comprendere l'essere umano in tutte le sue sfaccettature. 
-              Nel corso della mia carriera, ho affinato un approccio terapeutico che integra competenze cliniche rigorose con una reale 
-              ed empatica presenza relazionale.
+              Sono Monica Milan, psicologa e specializzanda in psicoterapia sistemico familiare-individuale presso la sede di Torino della Scuola Mara Selvini Palazzoli.
             </p>
             <p className="mb-4">
-              Mi sono specializzato attraverso anni di studio e pratica clinica, sviluppando una solida esperienza nel trattamento 
-              delle {params.fieldDisplay.toLowerCase()} e delle difficoltà emotive in generale. Il mio obiettivo principale è fornire uno spazio sicuro dove 
-              i pazienti possano esplorare se stessi senza il timore di essere giudicati.
+              Offro uno spazio di ascolto autentico e rispettoso ad adolescenti e adulti, e accompagno coppie e famiglie nei momenti di crisi o trasformazione. La mia esperienza nei servizi territoriali e nei centri antiviolenza mi ha insegnato quanto sia importante restituire dignità, voce e potere personale a chi attraversa situazioni di vulnerabilità.
+            </p>
+            <p className="mb-4 font-medium text-primary">
+              Se senti che è il momento di prenderti uno spazio per comprendere ciò che stai vivendo, possiamo iniziare da lì.
+            </p>
+
+            <h3 className="text-xl font-medium text-secondary-foreground mb-4 mt-8">L&apos;Approccio Sistemico-Relazionale</h3>
+            <p className="mb-4">
+              Il mio sguardo nasce dall&apos;approccio sistemico-relazionale: credo che la sofferenza non riguardi mai solo l&apos;individuo isolato, ma prenda forma all&apos;interno delle relazioni che abitiamo — familiari, di coppia, sociali, professionali.
+            </p>
+            <p className="mb-4">
+              Il sintomo è un segnale. Un tentativo, spesso doloroso, di dare voce a un equilibrio che si è incrinato, a bisogni che non hanno trovato spazio, a emozioni che non hanno potuto essere riconosciute.
             </p>
             <p className="mb-8">
-              Lavorando insieme, cercheremo non solo di alleviare il sintomo o il disagio immediato, ma di rintracciare le radici 
-              profonde delle dinamiche interiori, promuovendo un cambiamento autentico e duraturo.
+              La relazione terapeutica è per me uno strumento fondamentale: un luogo di collaborazione, dove terapeuta e persona co-costruiscono il percorso, passo dopo passo.
             </p>
             
             <SmartLink
               href="/contatti"
-              className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-md text-lg font-medium transition-all shadow-md mt-4 no-underline"
+              className="inline-block bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-3 rounded-md text-lg font-medium transition-all shadow-md no-underline"
             >
               Prenota un primo colloquio
             </SmartLink>
